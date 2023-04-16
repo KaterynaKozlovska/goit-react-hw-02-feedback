@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Section } from '../Section/Section';
-import { css } from './Statistics.module.css';
+import css from './Statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   return (
     <Section title="Statistics">
       <ul className={css.list}>
@@ -27,4 +33,4 @@ Statistics.propTypes = {
   positive: PropTypes.number,
 };
 
-export default Statistics;
+// export default Statistics;

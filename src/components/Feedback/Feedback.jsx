@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Section } from '../Section/Section';
-import { css } from './Feedback.module.css';
+import css from './Feedback.module.css';
 
-const Feedback = ({ options, onLeaveFeedback }) => {
+export const Feedback = ({ options, onLeaveFeedback }) => {
   return (
     <Section title="Please leave feedback">
       <div className={css.wrapper}>
@@ -30,4 +30,4 @@ Feedback.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
-export default Feedback;
+// export default Feedback;

@@ -20,7 +20,7 @@ import { Feedback } from './Feedback/Feedback';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
 
-export const App = () => {
+export default function App() {
   // === Used  of common useState ===
   const [feedback, setFeedback] = useState({
     good: 0,
@@ -68,4 +68,4 @@ export const App = () => {
       )}
     </div>
   );
-};
+}

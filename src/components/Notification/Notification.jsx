@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Section } from '../Section/Section';
-import { css } from './Notification.module.css';
+import { Section } from '../Section/Section';
+import css from './Notification.module.css';
 
-const Notification = ({ message }) => {
+export const Notification = ({ message }) => {
   return (
-    <section title="">
+    <Section title="">
       <div className={css.message}>{message}</div>
-    </section>
+    </Section>
   );
 };
 
@@ -15,4 +15,4 @@ Notification.propTypes = {
   message: PropTypes.string,
 };
 
-export default Notification;
+// export default Notification;
