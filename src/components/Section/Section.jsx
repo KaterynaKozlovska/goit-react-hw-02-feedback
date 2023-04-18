@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import  css  from './Section.module.css';
+import css from './Section.module.css';
 
 export const Section = ({ title = '', children }) => {
   return (
@@ -12,8 +12,8 @@ export const Section = ({ title = '', children }) => {
 };
 
 Section.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.any,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
 };
 
 // export default Section;
