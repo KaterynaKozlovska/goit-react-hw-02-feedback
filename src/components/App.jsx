@@ -3,7 +3,7 @@ import { Feedback } from './Feedback/Feedback';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
 
-class App extends React.Component {
+class App extends Component {
   state = {
     good: 0,
     neutral: 0,
